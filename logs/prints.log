@@ -1,0 +1,9 @@
+20:42:32.301 [main] INFO  common.base - Replied to first tweet
+21:00:12.418 [main] INFO  common.base - Tweet was posted
+21:41:16.858 [main] INFO  common.base - Deleted recent tweet
+21:41:57.795 [main] INFO  common.base - Tweet was liked
+21:41:57.937 [main] INFO  common.base - Tweet was unliked
+21:42:11.518 [main] INFO  common.base - Tweet was posted
+21:42:25.282 [main] INFO  common.base - Replied to recent tweet
+21:42:38.509 [main] INFO  common.base - Deleted recent tweet
+21:59:38.642 [main] INFO  common.base - Replied to recent tweet

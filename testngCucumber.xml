@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Twitter.Listeners" />
+		<listener class-name="common.ExtentReporterNG" />
+	</listeners>
+	
+	<test name="Validating valid and invalid login tests">
+		<classes>
+			<class name="cucumberOptions.LoginTestRunner" />
+		</classes>
+	</test>
+	<test name="Validating Search and Like a tweet tests">
+		<classes>
+	<class name="cucumberOptions.SearchAndLikeTweetTestRunner" />
+		</classes>
+	</test>
+	<test name="Validating Create a tweet test">
+		<classes>
+			<class name="cucumberOptions.CreateTweetTestRunner" />
+		</classes>
+	</test>
+	<test name="Validating Reply to first tweet test">
+		<classes>
+			<class name="cucumberOptions.ReplyTweetTestRunner" />
+		</classes>
+	</test>
+	<test name="Validating Delete to first tweet test">
+		<classes>
+			<class name="cucumberOptions.DeleteTweetTestRunner" />
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->

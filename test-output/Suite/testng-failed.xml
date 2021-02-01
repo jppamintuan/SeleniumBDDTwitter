@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Twitter.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Validating User login(failed)">
+    <classes>
+      <class name="Twitter.ParameterizedLoginTwitterTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Twitter.ParameterizedLoginTwitterTest -->
+    </classes>
+  </test> <!-- Validating User login(failed) -->
+  <test thread-count="5" name="Validating title in the Page(failed)">
+    <classes>
+      <class name="Twitter.SearchAndLikeTwitterTest">
+        <methods>
+          <include name="searchAndLike"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Twitter.SearchAndLikeTwitterTest -->
+    </classes>
+  </test> <!-- Validating title in the Page(failed) -->
+  <test thread-count="5" name="App Testing(failed)">
+    <classes>
+      <class name="Twitter.CreateTweetTwitterTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="createTweet"/>
+        </methods>
+      </class> <!-- Twitter.CreateTweetTwitterTest -->
+    </classes>
+  </test> <!-- App Testing(failed) -->
+  <test thread-count="5" name="Validating navigation Bar(failed)">
+    <classes>
+      <class name="Twitter.ReplyTweetTwitterTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="replyTweet"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Twitter.ReplyTweetTwitterTest -->
+    </classes>
+  </test> <!-- Validating navigation Bar(failed) -->
+  <test thread-count="5" name="Validating navigation Bar1(failed)">
+    <classes>
+      <class name="Twitter.DeleteTweetTwitterTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="deleteTweet"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Twitter.DeleteTweetTwitterTest -->
+    </classes>
+  </test> <!-- Validating navigation Bar1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
